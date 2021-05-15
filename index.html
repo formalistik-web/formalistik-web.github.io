@@ -1,78 +1,257 @@
-<!DOCTYPE html>
-<head>
-		<meta charset="utf-8">
-		<title>Carte de Visite Simplon Charles Assi</title>
-		<link href="css/blue - Copie.css" rel="stylesheet">
-</head>
-<body>
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 18px;
+	color: #333
+}
+.container {
+	margin-top: 5%
+}
+.aside {
+	background-color: #428bca;
+	color: #fff;
+	text-align: center;
+	padding: 20px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px
+}
+.aside img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	border: 8px solid #6aa3d5;
+	margin-bottom: 20px
+}
+.aside h1, .aside h2 {
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0
+}
+.aside h2 {
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 5px
+}
+.aside h3 {
+	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 0
+}
 
-	<div class="container">
-	<div class="row">
+.aside .btn {
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s
+}
+.aside .btn:hover {
+	color: #428bca;
+	background: #fff
+}
 
-				<!-- ASIDE -->
-				<div class="col-md-3 col-md-offset-2 col-sm-4 aside">
-
-					<h1>Charles Assi</h1>
-					<br>
-					<img src="Screenshot.jpg" width="230" height="230" >
-					<h2>Asprirant Simplonien</h2>
-					<h3> @Nantes</h3>
-				
-					<ul>
-								<li> <label> </label> <span class="value">41 ans </span></li>
-								<li> <label> </label> <span class="value">Segny (Pays de Gex - Ain 01)</span></li>
-								<li>  <span class="value">formalistik@gmail.com</span></li>
-								<li>  <span class="value">06 20 25 42 57</span></li>
-					</ul>
-					<a class="btn" href="#">ACCES AU CV</a>
-				</div>
-								<!-- //ASIDE -->
-
-				<div class="col-md-7 col-sm-8">
-					<!-- Navigation -->
-					<ul class="nav nav-tabs">
-						<li class="active">
-							<a data-toggle="tab" href="#about"><span></span>A PROPOS</a>
-						</li>
-						<li>
-							<a data-toggle="tab" href="#resume"><span></span>POURQUOI SIMPLON?</a>
-						</li>
-					</ul>
-				</div>
-					<!-- Navigation -->
-					<div class="tab-content scroll">
-
-						<!-- ABOUT ME -->
-						<div class="tab-pane fade in active" id="about">
-							<h1>Un parcours par défaut.</h1>
-							<p>En dépit d'un profil littéraire, j'ai orienté mes études vers l'enseignement audiovisuel. La démocratisation d'outils numeriques m'avait permis de devenir un véritable touche-à-tout depuis le lycée. Réaliser de films m'ont mené à la rencontre d'un producteur. Ce dernier m'a engagé comme assitant jusqu'à ce qu'il ne décède brutalement en 2004. De cette experience aussi révélatrice que formidable, je me souviens du maitre mots de celui qui était mon alors devenu mon mentor: Le media de demain sera internet.Youtube n'existait pas. Hélas la réalité du marché de l'emploi, qui ne recherchait alors que des stagiaires  dans mon domaine de prédilectin, m'a amené à reconsider des ambitions naissantes ...<p>
-              <p>J'ai, par la suite et surtout par nécessité, pu m'enrichir d'un large champs de compétences: vente, service clientèle, logistique, restauration, livraison, responsablité de terrain, etc. J'ai vainement tenté de former comme developpeur faute de soutien financier. Décidé à apprendre seul, j'ai développé des idées de projet comme celui d'une plateforme de mise en relation évènementielle qui demeure toujours en activité. Aujourd'hui, mon état d'esprit ets celiu de m'inscrire durablement dans une filière  qu m'époanouirait tout en ouvrant de nombreuses et rassurantes perspectives.
-</p>
-					<br>
-					<br>
-					<div class="resume_item resume_work" id="resume">
-												<h1>Simplon pour 5 bonnes raisons</h1>
-												<ul>
-													<li>En obtenant une certification professionnelle chez Simplon, j'ai la certitude d'obtenir une base de connaissance solide et reconnue par des entreprises comme mon actuel employeur .</li>
-													<li>Une formation en alternance représente pour moi l'assurance d'engranger une réelle experience  </li>
-                          <li>Simplin parce que je ne paierais pas l'accès au cours, ce qui représentait jusque là un frein pour moi. Mieux encore, je maintiens mon salaire ce qui est primordial pour moi. </li>
-                          <li>Le modèle d'enseignement  de Simplo est basé sur l'entraide. Je peux partager mes connaissances autant que profiter de celui des autres stagiaires si je me sens en diffuclté. Un point majeur lorque l'on souhaite reprendre confiance en soi. </li>
-							           <li>Savoir que j'ai l'assurance que cette reconversion sera assumée par mon employeurest un facteur décisif.
-					<br>
-					<br>
-												<h1>5 profils à voir</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<br>
-					<br>
-
-							
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+.scroll {
+	overflow-y: scroll;
+	height: 460px
+}
 
 
-</body>
-</html>
+.nav-tabs {
+		margin-top: 30px
+	}
+}
+
+.nav-tabs span {
+	display: block;
+	text-align: center;
+	font-size: 30px
+}
+.nav-tabs li a {
+	background: transparent;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	border: none !important;
+	color: gray;
+	outline: 0;
+	padding: 5px 10px;
+	margin: 0 10px
+}
+.nav-tabs li a:hover, .nav-tabs li a:focus {
+	color: #fff;
+	background-color: #428bca
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	color: #fff;
+	cursor: default;
+	background-color: #428bca
+}
+.tab-content {
+	padding: 50px 40px;
+	color: #666
+}
+
+a {
+	color: #428bca;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	text-decoration: none
+}
+a:hover {
+	color: #193c5a;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s
+}
+.btn {
+	background-color: #428bca;
+	border-color: #428bca;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s
+}
+.btn:hover {
+	background-color: #193c5a;
+	border-color: #193c5a;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s
+}
+
+
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1100px;
+}
+  
+
+.col-1, .col-3, .col-4, .col-5, {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-1, .col-4 {
+    float: left;
+  }
+ 
+  .col-4 {
+    width: 58.33333333%;
+  }
+ 
+  .col-1 {
+    width: 25%;
+  }
+  
+  .col-2 {
+    margin-left: 16.66666667%;
+  }
+  
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after, {
+  display: table;
+  content: " ";
+}
+
+
+.container:after,
+.row:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+{
+  clear: both;
+}
+ul {
+list-style-type: none;
+}
