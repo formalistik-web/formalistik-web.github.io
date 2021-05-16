@@ -42,6 +42,11 @@ html, body {
 	margin-bottom: 0
 }
 
+p {
+	margin-top: 5px;
+	margin-bottom: 5px
+}
+
 .aside .btn {
 	color: #fff;
 	border: 1px solid #fff;
