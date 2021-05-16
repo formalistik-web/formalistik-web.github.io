@@ -44,7 +44,8 @@ html, body {
 
 p {
 	margin-top: 5px;
-	margin-bottom: 5px
+	margin-bottom: 5px;
+	color: #26b72b;
 }
 
 .aside .btn {
